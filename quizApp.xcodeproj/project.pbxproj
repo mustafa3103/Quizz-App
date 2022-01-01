@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453DA58A27809274002C919B /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453DA58927809274002C919B /* ScoreViewController.swift */; };
 		454A8A34277A015D003CE9CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454A8A33277A015D003CE9CD /* AppDelegate.swift */; };
 		454A8A36277A015D003CE9CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454A8A35277A015D003CE9CD /* SceneDelegate.swift */; };
-		454A8A38277A015D003CE9CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454A8A37277A015D003CE9CD /* ViewController.swift */; };
+		454A8A38277A015D003CE9CD /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454A8A37277A015D003CE9CD /* PlayViewController.swift */; };
 		454A8A3B277A015D003CE9CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454A8A39277A015D003CE9CD /* Main.storyboard */; };
 		454A8A3E277A015D003CE9CD /* quizApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 454A8A3C277A015D003CE9CD /* quizApp.xcdatamodeld */; };
 		454A8A40277A015E003CE9CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454A8A3F277A015E003CE9CD /* Assets.xcassets */; };
 		454A8A43277A015E003CE9CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454A8A41277A015E003CE9CD /* LaunchScreen.storyboard */; };
+		454A8A4E277A0222003CE9CD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454A8A4D277A0222003CE9CD /* Question.swift */; };
+		454A8A50277A0320003CE9CD /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454A8A4F277A0320003CE9CD /* QuizBrain.swift */; };
+		454A8A52277A561C003CE9CD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454A8A51277A561C003CE9CD /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		453DA58927809274002C919B /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		454A8A30277A015D003CE9CD /* quizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		454A8A33277A015D003CE9CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		454A8A35277A015D003CE9CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		454A8A37277A015D003CE9CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		454A8A37277A015D003CE9CD /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		454A8A3A277A015D003CE9CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		454A8A3D277A015D003CE9CD /* quizApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = quizApp.xcdatamodel; sourceTree = "<group>"; };
 		454A8A3F277A015E003CE9CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		454A8A42277A015E003CE9CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		454A8A44277A015E003CE9CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		454A8A4D277A0222003CE9CD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		454A8A4F277A0320003CE9CD /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
+		454A8A51277A561C003CE9CD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,44 @@
 		454A8A32277A015D003CE9CD /* quizApp */ = {
 			isa = PBXGroup;
 			children = (
+				454A8A4A277A01B0003CE9CD /* Model */,
+				454A8A4B277A01BD003CE9CD /* View */,
+				454A8A4C277A01C5003CE9CD /* Controller */,
 				454A8A33277A015D003CE9CD /* AppDelegate.swift */,
 				454A8A35277A015D003CE9CD /* SceneDelegate.swift */,
-				454A8A37277A015D003CE9CD /* ViewController.swift */,
-				454A8A39277A015D003CE9CD /* Main.storyboard */,
 				454A8A3F277A015E003CE9CD /* Assets.xcassets */,
 				454A8A41277A015E003CE9CD /* LaunchScreen.storyboard */,
 				454A8A44277A015E003CE9CD /* Info.plist */,
 				454A8A3C277A015D003CE9CD /* quizApp.xcdatamodeld */,
 			);
 			path = quizApp;
+			sourceTree = "<group>";
+		};
+		454A8A4A277A01B0003CE9CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				454A8A4D277A0222003CE9CD /* Question.swift */,
+				454A8A4F277A0320003CE9CD /* QuizBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		454A8A4B277A01BD003CE9CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				454A8A39277A015D003CE9CD /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		454A8A4C277A01C5003CE9CD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				454A8A51277A561C003CE9CD /* MainViewController.swift */,
+				454A8A37277A015D003CE9CD /* PlayViewController.swift */,
+				453DA58927809274002C919B /* ScoreViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				454A8A38277A015D003CE9CD /* ViewController.swift in Sources */,
+				454A8A52277A561C003CE9CD /* MainViewController.swift in Sources */,
+				454A8A4E277A0222003CE9CD /* Question.swift in Sources */,
+				454A8A38277A015D003CE9CD /* PlayViewController.swift in Sources */,
 				454A8A34277A015D003CE9CD /* AppDelegate.swift in Sources */,
+				454A8A50277A0320003CE9CD /* QuizBrain.swift in Sources */,
 				454A8A3E277A015D003CE9CD /* quizApp.xcdatamodeld in Sources */,
 				454A8A36277A015D003CE9CD /* SceneDelegate.swift in Sources */,
+				453DA58A27809274002C919B /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +339,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -327,6 +368,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
