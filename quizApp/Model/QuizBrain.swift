@@ -22,8 +22,6 @@ struct QuizBrain {
     
     mutating func getQuestionText(number: Int) {
         
-        
-        
         if number < 3 {
             let randomNumber = Int.random(in: 0 ... easyQuestion.count - 1)
             selectedQ = easyQuestion[randomNumber].text
